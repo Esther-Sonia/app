@@ -1,0 +1,52 @@
+# Student Management App
+
+This is a simple Student Management application built with Python and SQLAlchemy. The project uses Alembic for managing database migrations and is structured around object-oriented principles.
+
+## Features
+
+- Add and manage student records
+- Use SQLAlchemy ORM for database interaction
+- Database migrations powered by Alembic
+
+## Technologies Used
+
+- Python
+- SQLAlchemy
+- Alembic
+- SQLite (default database)
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Esther-Sonia/app.git
+cd app
+
+
+## Setup
+
+1. **Create virtual environment and install dependencies:**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+2. **Initialize the database and run migrations:**
+
+alembic upgrade head
+
+
+3. **Usage**
+
+- Define your SQLAlchemy models in models.py.
+
+- When models change, generate a migration with:
+
+alembic revision --autogenerate -m "Describe your changes"
+
+4. **Apply migrations to the database:**
+
+-alembic upgrade head
+
